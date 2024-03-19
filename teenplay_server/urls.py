@@ -45,7 +45,7 @@ class IntConverter:
 
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('club/', include('club.urls-web')),
     path('clubs/', include('club.urls-web')),
     path('app/club/', include('club.urls-app')),
@@ -62,49 +62,49 @@ urlpatterns = [
     path('festival/', include('festival.urls-web')),
     path('app/festival/', include('festival.urls-app')),
     # 관리자
-    path('admin/login/', AdminLoginView.as_view(), name='admin-login'),
-    path('admin/logout/', AdminLogoutView.as_view(), name='admin-login'),
+    # path('admin/login/', AdminLoginView.as_view(), name='admin-login'),
+    # path('admin/logout/', AdminLogoutView.as_view(), name='admin-login'),
     # 관리자 - 유저 관리
-    path('admin/user/', AdminUserView.as_view(), name='admin-user'),
-    path('admin/users/<int:page>/', AdminUserAPI.as_view(), name='admin-user-api'),
-    path('admin/user/update/<int:member_id>/', AdminUserUpdateAPI.as_view(), name='admin-user-update'),
+    # path('admin/user/', AdminUserView.as_view(), name='admin-user'),
+    # path('admin/users/<int:page>/', AdminUserAPI.as_view(), name='admin-user-api'),
+    # path('admin/user/update/<int:member_id>/', AdminUserUpdateAPI.as_view(), name='admin-user-update'),
     # 관리자 - 쪽지 관리
-    path('admin/message/', AdminMessageView.as_view(), name='admin-message'),
-    path('admin/messages/<int:page>/', AdminMessageAPI.as_view(), name='admin-message-api'),
+    # path('admin/message/', AdminMessageView.as_view(), name='admin-message'),
+    # path('admin/messages/<int:page>/', AdminMessageAPI.as_view(), name='admin-message-api'),
     # 관리자 - 틴플레이 관리
     # path('admin/teenplay/', AdminTeenplayView.as_view(), name='admin-teenplay'),
     # path('admin/teenplaies/<int:page>/', AdminTeenplayAPI.as_view(), name='admin-teenplay-api'),
     # path('admin/teenplaies/delete/<int:teenplay_id>/', AdminTeenplayDeleteAPI.as_view(), name='admin-teenplay-delete'),
     # 관리자 - 게시글 홍보글 관리
-    path('admin/promote/', AdminPromoteView.as_view(), name='admin-promote'),
-    path('admin/promotes/<int:page>/', AdminPromoteAPI.as_view(), name='admin-promote-api'),
-    path('admin/promotes/delete/<int:promote_id>/', AdminPromoteDeleteAPI.as_view(), name='admin-promote-delete'),
+    # path('admin/promote/', AdminPromoteView.as_view(), name='admin-promote'),
+    # path('admin/promotes/<int:page>/', AdminPromoteAPI.as_view(), name='admin-promote-api'),
+    # path('admin/promotes/delete/<int:promote_id>/', AdminPromoteDeleteAPI.as_view(), name='admin-promote-delete'),
     # 관리자 - 게시글 활동모집글 관리
-    path('admin/activity/', AdminActivityView.as_view(), name='admin-activity'),
-    path('admin/activities/<int:page>/', AdminActivityAPI.as_view(), name='admin-activity-api'),
-    path('admin/activities/delete/<int:activity_id>/', AdminActivityDeleteAPI.as_view(), name='admin-activity-delete'),
+    # path('admin/activity/', AdminActivityView.as_view(), name='admin-activity'),
+    # path('admin/activities/<int:page>/', AdminActivityAPI.as_view(), name='admin-activity-api'),
+    # path('admin/activities/delete/<int:activity_id>/', AdminActivityDeleteAPI.as_view(), name='admin-activity-delete'),
     # 관리자 - 게시글 위시리스트 관리
-    path('admin/wishlist/', AdminWishlistView.as_view(), name='admin-wishlist'),
-    path('admin/wishlists/<int:page>/', AdminWishlistAPI.as_view(), name='admin-wishlist-api'),
-    path('admin/wishlists/delete/<int:wishlist_id>/', AdminWishlistDeleteAPI.as_view(), name='admin-wishlist-delete'),
+    # path('admin/wishlist/', AdminWishlistView.as_view(), name='admin-wishlist'),
+    # path('admin/wishlists/<int:page>/', AdminWishlistAPI.as_view(), name='admin-wishlist-api'),
+    # path('admin/wishlists/delete/<int:wishlist_id>/', AdminWishlistDeleteAPI.as_view(), name='admin-wishlist-delete'),
     # 관리자 - 전체 모임 관리
-    path('admin/meeting/', AdminMeetingView.as_view(), name='admin-meeting'),
-    path('admin/meetings/<int:page>/', AdminMeetingAPI.as_view(), name='admin-meeting-api'),
-    path('admin/meetings/delete/<int:meeting_id>', AdminMeetingDeleteAPI.as_view(), name='admin-meeting-delete'),
+    # path('admin/meeting/', AdminMeetingView.as_view(), name='admin-meeting'),
+    # path('admin/meetings/<int:page>/', AdminMeetingAPI.as_view(), name='admin-meeting-api'),
+    # path('admin/meetings/delete/<int:meeting_id>', AdminMeetingDeleteAPI.as_view(), name='admin-meeting-delete'),
     # 관리자 - 축제 관리
-    path('admin/festival/', AdminFestivalView.as_view(), name='admin-festival'),
-    path('admin/festivals/<int:page>/', AdminFestivalPaginationAPI.as_view(), name='admin-festival-page-api'),
-    path('admin/festivals/delete/<int:festival_id>/', AdminFestivalUpdateAPI.as_view(), name='admin-festival-delete-api'),
-    path('admin/festival/write/', AdminFestivalWriteView.as_view(), name='admin-festival-write'),
+    # path('admin/festival/', AdminFestivalView.as_view(), name='admin-festival'),
+    # path('admin/festivals/<int:page>/', AdminFestivalPaginationAPI.as_view(), name='admin-festival-page-api'),
+    # path('admin/festivals/delete/<int:festival_id>/', AdminFestivalUpdateAPI.as_view(), name='admin-festival-delete-api'),
+    # path('admin/festival/write/', AdminFestivalWriteView.as_view(), name='admin-festival-write'),
     # 관리자 - 공지사항 관리
-    path('admin/notice/', AdminNoticeView.as_view(), name='admin-notice'),
-    path('admin/notices/<int:page>/', AdminNoticePaginationAPI.as_view(), name='admin-notice-page-api'),
-    path('admin/notices/update/<int:notice_id>/', AdminNoticeUpdateAPI.as_view(), name='admin-notice-delete-api'),
-    path('admin/notice/write/', AdminNoticeWriteView.as_view(), name='admin-notice-write'),
+    # path('admin/notice/', AdminNoticeView.as_view(), name='admin-notice'),
+    # path('admin/notices/<int:page>/', AdminNoticePaginationAPI.as_view(), name='admin-notice-page-api'),
+    # path('admin/notices/update/<int:notice_id>/', AdminNoticeUpdateAPI.as_view(), name='admin-notice-delete-api'),
+    # path('admin/notice/write/', AdminNoticeWriteView.as_view(), name='admin-notice-write'),
     # 관리자 - 댓글 관리
-    path('admin/comment/', AdminCommentView.as_view(), name='admin-comment'),
-    path('admin/comments/<int:page>/', AdminCommentAPI.as_view(), name='admin-comment-api'),
-    path('admin/comments/delete/', AdminCommentDeleteAPI.as_view(), name='admin-comment-delete'),
+    # path('admin/comment/', AdminCommentView.as_view(), name='admin-comment'),
+    # path('admin/comments/<int:page>/', AdminCommentAPI.as_view(), name='admin-comment-api'),
+    # path('admin/comments/delete/', AdminCommentDeleteAPI.as_view(), name='admin-comment-delete'),
     # 여기까지~
     path('terms/', include('terms.urls-web')),
     path('app/terms/', include('terms.urls-app')),
