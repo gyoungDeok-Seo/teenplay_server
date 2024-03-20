@@ -530,7 +530,10 @@ const addClickEventDelete = () => {
     const commentMenuOpenChoiceDelete = document.querySelectorAll(".comment-menu-open-choice.delete")
     commentMenuOpenChoiceDelete.forEach((btn) => {
         btn.addEventListener("click", async (e) => {
+            console.log(e.target)
             const replyId = e.target.classList[2];
+            console.log(e.target.classList)
+            console.log(e.target.classList[2])
             await clubPostRelyService.remove({
                 'reply_id': replyId
             });
