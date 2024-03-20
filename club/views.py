@@ -364,7 +364,7 @@ class ClubPrPostReplyAPI(APIView):
 
     @transaction.atomic
     def delete(self, request):
-        reply_id = request.GET.get('id')
+        reply_id = int(request.GET.get('id'))
 
         club_post_reply = ClubPostReply.enabled_objects.get(id=reply_id)
         club_post_reply.status = 0
