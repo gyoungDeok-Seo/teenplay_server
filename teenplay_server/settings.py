@@ -73,7 +73,7 @@ CRONJOBS = [
     ('0 0 * * *', 'activity.tasks.DeleteOldImages')
 ]
 
-SITE_ID = 2
+SITE_ID = 3
 
 SOCIALACCOUNT_AUTO_SIGNUP = True
 ACCOUNT_EMAIL_REQUIRED = True
