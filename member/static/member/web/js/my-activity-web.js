@@ -145,7 +145,7 @@ const showList = async (activity_data) =>{
         text += `<div class="activity-wrap">
                     <div class="activity-box">
                       <div class="activity-img-box">
-                        <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="activity-img-link">
+                        <a href="/activity/detail/?id=${activity_data.id}" class="activity-img-link">
                           <!-- 종료된 활동은 이미지와 제목이 회색이라 클래스명이 다름 -->
                           <!-- <img class="passivity-img" /> -->
                           <img
@@ -202,7 +202,7 @@ const showList = async (activity_data) =>{
                         <div class="content-tit-wrap">
                           <!-- 이 부분도 회색 -->
                           <!-- <a class="passivity-content-tit" -->
-                          <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="passivity-content-tit">${activity_data.activity_title}</a>
+                          <a href="/activity/detail/?id=${activity_data.id}" class="passivity-content-tit">${activity_data.activity_title}</a>
                         </div>
                         <div class="bottom-content-wrap">
                           <div class="bottom-content-ahead">
@@ -219,7 +219,7 @@ const showList = async (activity_data) =>{
         text += `<div class="activity-wrap">
                     <div class="activity-box">
                       <div class="activity-img-box">
-                        <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="activity-img-link">
+                        <a href="/activity/detail/?id=${activity_data.id}" class="activity-img-link">
                           <!-- 종료된 활동은 이미지와 제목이 회색이라 클래스명이 다름 -->
                           <!-- <img class="passivity-img" /> -->
                           <img
@@ -276,7 +276,7 @@ const showList = async (activity_data) =>{
                         <div class="content-tit-wrap">
                           <!-- 이 부분도 회색 -->
                           <!-- <a class="passivity-content-tit" -->
-                          <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="passivity-content-tit">${activity_data.activity_title}</a>
+                          <a href="/activity/detail/?id=${activity_data.id}" class="passivity-content-tit">${activity_data.activity_title}</a>
                         </div>
                         <div class="bottom-content-wrap">
                           <div class="bottom-content-ahead">
@@ -295,7 +295,7 @@ const showList = async (activity_data) =>{
                 `<div class="activity-wrap">
                     <div class="activity-box">
                       <div class="activity-img-box">
-                        <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="activity-img-link">
+                        <a href="/activity/detail/?id=${activity_data.id}" class="activity-img-link">
                           <img
                             src="/static/public/web/images/logo/logo8.png"
                             alt="ces올인원 패키지"
@@ -349,7 +349,7 @@ const showList = async (activity_data) =>{
                           </div>
                         </div>
                         <div class="content-tit-wrap">
-                          <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="content-tit">${activity_data.activity_title}</a>
+                          <a href="/activity/detail/?id=${activity_data.id}" class="content-tit">${activity_data.activity_title}</a>
                         </div>
                         <div class="bottom-content-wrap">
                           <div class="bottom-content-ahead">
@@ -367,7 +367,7 @@ const showList = async (activity_data) =>{
                 `<div class="activity-wrap">
                     <div class="activity-box">
                       <div class="activity-img-box">
-                        <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="activity-img-link">
+                        <a href="/activity/detail/?id=${activity_data.id}" class="activity-img-link">
                           <img
                             src="/upload/${activity_data.thumbnail_path}"
                             alt="ces올인원 패키지"
@@ -421,7 +421,7 @@ const showList = async (activity_data) =>{
                           </div>
                         </div>
                         <div class="content-tit-wrap">
-                          <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="content-tit">${activity_data.activity_title}</a>
+                          <a href="/activity/detail/?id=${activity_data.id}" class="content-tit">${activity_data.activity_title}</a>
                         </div>
                         <div class="bottom-content-wrap">
                           <div class="bottom-content-ahead">
@@ -440,7 +440,7 @@ const showList = async (activity_data) =>{
             <div class="activity-wrap">
                 <div class="activity-box">
                   <div class="activity-img-box">
-                    <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="activity-img-link">
+                    <a href="/activity/detail/?id=${activity_data.id}" class="activity-img-link">
                       <img
                         src="/static/public/web/images/logo/logo8.png"
                         alt="ces올인원 패키지"
@@ -494,7 +494,7 @@ const showList = async (activity_data) =>{
                       </div>
                     </div>
                     <div class="content-tit-wrap">
-                      <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="content-tit">${activity_data.activity_title}</a>
+                      <a href="/activity/detail/?id=${activity_data.id}" class="content-tit">${activity_data.activity_title}</a>
                     </div>
                     <div class="bottom-content-wrap">
                       <div class="bottom-content-ahead">
@@ -512,7 +512,7 @@ const showList = async (activity_data) =>{
             <div class="activity-wrap">
                 <div class="activity-box">
                   <div class="activity-img-box">
-                    <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="activity-img-link">
+                    <a href="/activity/detail/?id=${activity_data.id}" class="activity-img-link">
                       <img
                         src="/upload/${activity_data.thumbnail_path}"
                         alt="ces올인원 패키지"
@@ -566,7 +566,7 @@ const showList = async (activity_data) =>{
                       </div>
                     </div>
                     <div class="content-tit-wrap">
-                      <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="content-tit">${activity_data.activity_title}</a>
+                      <a href="/activity/detail/?id=${activity_data.id}" class="content-tit">${activity_data.activity_title}</a>
                     </div>
                     <div class="bottom-content-wrap">
                       <div class="bottom-content-ahead">
@@ -585,7 +585,7 @@ const showList = async (activity_data) =>{
             <div class="activity-wrap">
                 <div class="activity-box">
                   <div class="activity-img-box">
-                    <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="activity-img-link">
+                    <a href="/activity/detail/?id=${activity_data.id}" class="activity-img-link">
                       <img
                         src="/static/public/web/images/logo/logo8.png"
                         alt="ces올인원 패키지"
@@ -628,7 +628,7 @@ const showList = async (activity_data) =>{
                   <div class="content-txt-box">
                     <div class="middle-txt">
                       <div>
-                        <a class="txt-head-confirm" href="http://127.0.0.1:10000/member/activity/?activity_id=${activity_data.id}" >활동수정</a>
+                        <a class="txt-head-confirm" href="/member/activity/?activity_id=${activity_data.id}" >활동수정</a>
                       </div>
                       <div>
                         <span class="txt-head">${changeDate(activity_data.activity_end)}</span>
@@ -637,7 +637,7 @@ const showList = async (activity_data) =>{
                       </div>
                     </div>
                     <div class="content-tit-wrap">
-                      <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="content-tit">${activity_data.activity_title}</a>
+                      <a href="/activity/detail/?id=${activity_data.id}" class="content-tit">${activity_data.activity_title}</a>
                     </div>
                     <div class="bottom-content-wrap">
                       <div class="bottom-content-ahead">
@@ -655,7 +655,7 @@ const showList = async (activity_data) =>{
             <div class="activity-wrap">
                 <div class="activity-box">
                   <div class="activity-img-box">
-                    <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="activity-img-link">
+                    <a href="/activity/detail/?id=${activity_data.id}" class="activity-img-link">
                       <img
                         src="/upload/${activity_data.thumbnail_path}"
                         alt="ces올인원 패키지"
@@ -698,7 +698,7 @@ const showList = async (activity_data) =>{
                   <div class="content-txt-box">
                     <div class="middle-txt">
                       <div>
-                        <a class="txt-head-confirm" href="http://127.0.0.1:10000/member/activity/?activity_id=${activity_data.id}">활동수정</a>
+                        <a class="txt-head-confirm" href="/member/activity/?activity_id=${activity_data.id}">활동수정</a>
                       </div>
                       <div>
                         <span class="txt-head">${changeDate(activity_data.activity_end)}</span>
@@ -707,7 +707,7 @@ const showList = async (activity_data) =>{
                       </div>
                     </div>
                     <div class="content-tit-wrap">
-                      <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.id}" class="content-tit">${activity_data.activity_title}</a>
+                      <a href="/activity/detail/?id=${activity_data.id}" class="content-tit">${activity_data.activity_title}</a>
                     </div>
                     <div class="bottom-content-wrap">
                       <div class="bottom-content-ahead">
@@ -726,7 +726,7 @@ const showList = async (activity_data) =>{
             text += `<div class="activity-wrap">
                         <div class="activity-box">
                           <div class="activity-img-box">
-                            <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.activity_id}" class="activity-img-link">
+                            <a href="/activity/detail/?id=${activity_data.activity_id}" class="activity-img-link">
                               <img
                                 src="/static/public/web/images/logo/logo8.png"
                                 alt="ces올인원 패키지"
@@ -778,7 +778,7 @@ const showList = async (activity_data) =>{
                               </div>
                             </div>
                             <div class="content-tit-wrap">
-                              <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.activity_id}" class="content-tit">${activity_data.activity__activity_title}</a>
+                              <a href="/activity/detail/?id=${activity_data.activity_id}" class="content-tit">${activity_data.activity__activity_title}</a>
                             </div>
                             <div class="bottom-content-wrap">
                               <div class="bottom-content-ahead">
@@ -797,7 +797,7 @@ const showList = async (activity_data) =>{
             text += `<div class="activity-wrap">
                         <div class="activity-box">
                           <div class="activity-img-box">
-                            <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.activity_id}" class="activity-img-link">
+                            <a href="/activity/detail/?id=${activity_data.activity_id}" class="activity-img-link">
                               <img
                                 src="/upload/${activity_data.activity__thumbnail_path}"
                                 alt="ces올인원 패키지"
@@ -849,7 +849,7 @@ const showList = async (activity_data) =>{
                               </div>
                             </div>
                             <div class="content-tit-wrap">
-                              <a href="http://127.0.0.1:10000/activity/detail/?id=${activity_data.activity_id}" class="content-tit">${activity_data.activity__activity_title}</a>
+                              <a href="/activity/detail/?id=${activity_data.activity_id}" class="content-tit">${activity_data.activity__activity_title}</a>
                             </div>
                             <div class="bottom-content-wrap">
                               <div class="bottom-content-ahead">

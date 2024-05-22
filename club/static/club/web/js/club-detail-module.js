@@ -75,6 +75,7 @@ const clubDetailService = (() => {
                 'Content-Type': 'application/json',
                 'X-CSRFToken': csrftoken
             }
+            // body: JSON.stringify({'club_id': clubId, 'member_id': memberId})
         });
 
         await getClubMemberInfo(memberId, clubId, createClubTopBtn);

@@ -39,8 +39,8 @@ class ClubTestCase(TestCase):
 
     # print(club)
 
-    member = Member.objects.get(id=8)
-    print(member)
+    # member = Member.objects.get(id=8)
+    # print(member)
     # club_member = ClubMember.objects.filter(member=member)
     #
     # if club_member.exists():
@@ -89,37 +89,7 @@ class ClubTestCase(TestCase):
     # print(finished_activities)
 
     # ClubPostReply.objects.create(reply_content='모임 홍보글 댓글 테스트 내용8', club_post_id=1, member_id=2)
-    club_id = 2
-    view = 'activity'
-    # 화면에서 필요한 컬럼들을 가독성을 높이기 위해 list형식으로 담아 사용
-    columns = [
-        'id',
-        'club_name',
-        'club_intro',
-        'club_info',
-        'club_profile_path',
-        'club_banner_path',
-        'owner_id',
-        'owner_name',
-        'owner_email',
-        'owner_phone',
-    ]
 
-    # club_id를 통해 모임을 select 한 후 .annotate().values()를 사용해서 모임장의 정보를 각 쿼리셋 객체의 필드에 추가하고
-    # 모임장의 정보는 정참조를 통해, 모임 구성원의 수는 역참조를 통해 club_member의 status가 1인 것만 카운트하여 필드에 추가
-    club_list = Club.objects.filter(id=club_id) \
-        .annotate(
-        owner_id=F('member__id'),
-        owner_name=F('member__member_nickname'),
-        owner_email=F('member__member_email'),
-        owner_phone=F('member__member_phone')
-    ).values(*columns).annotate(
-        club_member_count=Count('clubmember', filter=Q(clubmember__status=1)))
-    # 위 코드에 이어서 사용할 경우 중복이 발생하여 집계가 제대로 되지 않기 때문에 모임의 활동수는 따로 집계하도록 구성
-    # .distinct()를 사용하지 않은 이유는 group_by가 된 경우 중복 제거가 제대로 되지 않기 때문
-    club_activity_count = Club.objects.filter(id=club_id).values('id') \
-        .annotate(club_activity_count=Count('activity')).first()
 
-    for club in club_list:
-        club['club_activity_count'] = club_activity_count.get('club_activity_count')
-        print(club)
+    pass
+

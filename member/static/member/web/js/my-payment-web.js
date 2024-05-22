@@ -94,7 +94,7 @@ const showList =(pay) =>{
                                 <div class="payment-activity-thumbnail-wrap">
                                     <div class="payment-activity-thumbnail-container">
                                         <!-- 해당 활동 상세보기 주소 필요 -->
-                                        <a href="http://127.0.0.1:10000/member/activity/?activity_id=${pay.activity__id}" target="_blank">
+                                        <a href="/member/activity/?activity_id=${pay.activity__id}" target="_blank">
                                             <!-- 해당 활동의 썸네일 경로 필요 -->
                                             <img class="payment-activity-thumbnail" src="/static/public/web/images/logo/logo8.png" />
                                         </a>
@@ -143,7 +143,7 @@ const showList =(pay) =>{
                                 <div class="payment-activity-thumbnail-wrap">
                                     <div class="payment-activity-thumbnail-container">
                                         <!-- 해당 활동 상세보기 주소 필요 -->
-                                        <a href="http://127.0.0.1:10000/member/activity/?activity_id=${pay.activity__id}" target="_blank">
+                                        <a href="/member/activity/?activity_id=${pay.activity__id}" target="_blank">
                                             <!-- 해당 활동의 썸네일 경로 필요 -->
                                             <img class="payment-activity-thumbnail" src="/upload/${pay.activity__thumbnail_path}" />
                                         </a>

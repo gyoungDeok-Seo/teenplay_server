@@ -1180,25 +1180,35 @@ class AdminCommentDeleteAPI(APIView):
 
 
 # ----------------------------------------------------------------------------------------------------------------------
-# 회사 소개 페이지 이동
+# 회사 소개 페이지로 이동하는 view입니다.
 class CompanyIntroductionView(View):
     def get(self, request):
         return render(request, 'company-info/web/company-info-web.html')
 
 
-# 회사 소개에서 공지사항 띄우기
+# 회사 소개에서 fetch를 통해 요청한 공지사항 데이터를 응답하는 REST API입니다.
 class CompanyNoticeListAPI(APIView):
     def get(self, request, page):
+        # 페이지네이션은 숫자로 된 버튼 없이 더보기 버튼으로 구성됩니다.
+        # 한번에 조회하여 표시할 행(공지사항)의 개수는 7개입니다.
         row_count = 7
+
+        # 현재 페이지를 기준으로 마지막 인덱스를 구합니다.
         offset = (page - 1) * row_count
+
+        # 현재 페이지를 기준으로 첫 번째 인덱스를 구합니다.
         limit = page * row_count
 
-        notices = Notice.objects.filter(status=True).values()[offset:limit]
+        # 해당 페이지네이션에 맞는 공지사항을 values()를 통해 딕셔너리가 담긴 Queryset 객체로, 최신순으로 조회합니다.
+        notices = Notice.objects.filter(status=True).values().order_by('-id')[offset:limit]
 
+        # 더보기 버튼의 표시 여부를 결정하기 위해 다음 공지사항(행)이 있는지 여부를 검사하여 담아줍니다.
         has_next = Notice.objects.filter(status=True)[limit:limit+1].exists()
 
+        # 전체 공지사항 개수를 구하여 저장합니다.
         total = Notice.objects.filter(status=True).count()
 
+        # 받아온 정보들을 딕셔너리에 담아 Response로 응답합니다.
         notice_info = {
             'notices': notices,
             'hasNext': has_next,

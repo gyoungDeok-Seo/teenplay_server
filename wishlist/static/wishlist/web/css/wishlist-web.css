@@ -129,6 +129,7 @@ input, select, textarea {
 
 /* 메인 부분 */
 .main {
+    padding-top: 5rem;
     min-height: 100vh
 }
 
