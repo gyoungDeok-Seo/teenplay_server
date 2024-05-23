@@ -534,7 +534,7 @@ const createListService = (() => {
                 `
                 } else{
                     text += `
-                                <img src="/teenplay_server/static/public/web/images/logo/logo8.png" alt="활동 이미지" class="club-detail-img" />
+                                <img src="/static/public/web/images/logo/logo8.png" alt="활동 이미지" class="club-detail-img" />
                 `
                 }
                 text += `
